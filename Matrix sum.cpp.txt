@@ -1,0 +1,36 @@
+#include <iostream>
+int main()
+{
+    int mat1[5][2],mat2[5][2],mat_sum[5][2],rows,columns,i=0,j=0;
+    std::cout<<"Enter the no: of rows and columns";
+    std::cin>>rows>>columns;
+    
+    std::cout<<"Enter the first matrix elements";
+    for(i=0;i<rows;i++)
+     {for(j=0;j<columns;j++)
+       {std::cin>>mat1[i][j];}
+     }
+     
+     std::cout<<"Enter the second matrix elements";
+     for(i=0;i<rows;i++)
+     {for(j=0;j<columns;j++)
+       {std::cin>>mat2[i][j];}
+     }
+    
+    for(i=0;i<rows;i++)
+    { for(j=0;j<columns;j++)
+      {mat_sum[i][j]=mat1[i][j]+mat2[i][j];}
+    }
+    
+    std::cout<<"The resultant matrix is"<<std::endl;
+    
+    for(i=0;i<rows;i++)
+    {
+        std::cout<<std::endl;
+        for(j=0;j<columns;j++)
+    {std::cout<<mat_sum[i][j]<<' ';}
+    }
+    
+    return 0;
+    
+}
