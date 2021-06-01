@@ -1,0 +1,57 @@
+#include <iostream>
+#include<cmath>
+int main()
+{
+    int option;
+    
+    std::cout<<"Enter your option\n 1.Add\n 2.Subtract\n 3.Divide\n 4.Remainder\n 5.Square\n 6.Square root\n 7.Power\n";
+    std::cin>>option;
+    
+    switch(option)
+    {
+        case 1: {float num1,num2;
+                std::cout<<"Enter num1 and num2"<<std::endl;
+                std::cin>>num1>>num2;
+                std::cout<<"Sum of num1 and num2="<<num1+num2;
+                break;}
+                
+        case 2: {float num1,num2;
+                std::cout<<"Enter num1 and num2"<<std::endl;
+                std::cin>>num1>>num2;
+                std::cout<<"Difference of num1 and num2="<<num1-num2;
+                break;}
+                
+        case 3:{float num1,num2;
+                std::cout<<"Enter num1 and num2"<<std::endl;
+                std::cin>>num1>>num2;
+                std::cout<<"Quotient of num1 and num2="<<num1/num2;
+                break;}
+                
+        case 4:{int num1,num2;
+                std::cout<<"Enter num1 and num2"<<std::endl;
+                std::cin>>num1>>num2;
+                std::cout<<"Remainder of num1 and num2="<<num1%num2;
+                break;}
+                
+        case 5:{float num;
+                std::cout<<"Enter num"<<std::endl;
+                std::cin>>num;
+                std::cout<<"Square of num ="<<num*num;
+                break;} 
+                
+        case 6:{float num;
+                std::cout<<"Enter num"<<std::endl;
+                std::cin>>num;
+                std::cout<<"Square root of num="<<sqrt(num);
+                break;}  
+                
+        case 7:{float num,power;
+                std::cout<<"Enter num and power"<<std::endl;
+                std::cin>>num>>power;
+                std::cout<<"Square root of num="<<pow(num,power);
+                break;} 
+                
+       default:std::cout<<"Enter a valid option";        
+    }
+    return 0;
+}
