@@ -1,0 +1,17 @@
+#include<iostream>
+#include<cmath>
+int Ret_pr(int b,int c);
+int main()
+{
+    int var1=2,var2=3,power,a;
+    a=Ret_pr(var1,var2);
+    std::cout<<"power value="<<a;
+    return 0;
+}
+
+int Ret_pr(int b,int c)
+{
+    int d;
+    d=pow(b,c);
+    return d;
+}
